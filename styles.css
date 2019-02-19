@@ -1,0 +1,23 @@
+* {
+	text-align: center !important;
+	font-family: Helvetica;
+}
+h3 {
+	font-weight: bold;
+}
+::-moz-selection {
+	background: hsl(0, 0%, 90%) !important;
+}
+::selection {
+	background: hsl(0, 0%, 90%) !important;
+}
+body {
+	margin: 50px;
+}
+#mainDiv {
+	font-size: 200%;
+	border: 2px solid #666;
+	color: #666;
+	border-radius: 20px;
+	padding: 20px;
+}

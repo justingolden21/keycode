@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<title>Keycode Finder</title>
+	<meta charset="utf-8">
+	<meta name="title=" content="Keycode Finder">
+	<meta name="robots" content="index, follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="A simple keycode finder">
+	<meta name="keywords" content="keycode, key code, keycode finder, key code finder, keydown, keyup, keypress, javascript, keyboard">
+	<meta class="theme" name="theme-color" content="#000">
+	<meta class="theme" name="msapplication-navbutton-color" content="#000">
+	<meta class="theme" name="apple-mobile-web-app-status-bar-style" content="#000">
+	<!-- <link rel="shortcut icon" href="img/logo.png"> -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="styles.css">
+	<script src="scripts.js"></script>
+
 </head>
 <body>
-	Which: <span id="which"></span>
-	Code: <span id="code"></span>
 
-<script type="text/javascript">
-document.body.onkeydown = function(e) {
-	if (!e.metaKey)
-		e.preventDefault();
-	document.getElementById('which').innerHTML = e.which;
-	document.getElementById('code').innerHTML = e.code;
-}
-</script>
+	<h3>Keycode Finder</h3>
+	<h5>Press a key...</h5>
+	<br>
+	<div id="mainDiv">
+		<p>Which: <span id="which"></span></p>
+		<p>Code: <span id="code"></span></p>
+	</div>
+	<hr>
+	<p><button id="clear" class="btn btn-sm btn-danger">&times;</button> History:</p>
+	<select multiple id="history" class="form-control"></select>
 
 </body>
 </html>
