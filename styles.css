@@ -5,6 +5,12 @@
 h3 {
 	font-weight: bold;
 }
+#hint.highlight {
+	font-size: 500%;
+}
+#bodyDiv.hidden {
+	display: none;
+}
 ::-moz-selection {
 	background: hsl(0, 0%, 90%) !important;
 }
@@ -20,4 +26,14 @@ body {
 	color: #666;
 	border-radius: 20px;
 	padding: 20px;
+}
+
+select {
+	border: 2px solid #666 !important;
+}
+select option {
+	padding: 10px;
+}
+hr {
+	border: 1px solid #666;
 }
