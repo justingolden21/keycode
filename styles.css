@@ -2,9 +2,6 @@
 	text-align: center !important;
 	font-family: Helvetica;
 }
-h3 {
-	font-weight: bold;
-}
 #hint.highlight {
 	font-size: 500%;
 }
@@ -34,6 +31,6 @@ select {
 select option {
 	padding: 10px;
 }
-hr {
+/*hr {
 	border: 1px solid #666;
-}
+}*/

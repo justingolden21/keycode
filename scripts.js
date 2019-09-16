@@ -1,5 +1,5 @@
-$(function() {
-	document.body.onkeydown = function(e) {
+$( ()=> {
+	document.body.onkeydown = (e)=> {
 		if (!e.metaKey)
 			e.preventDefault();
 		document.getElementById('which').innerHTML = e.which;
@@ -8,7 +8,7 @@ $(function() {
 		$('#hint').removeClass('highlight');
 		$('#bodyDiv').removeClass('hidden');
 	}
-	$('#clear').click(function() {
+	$('#clear').click( ()=> {
 		$('#history').html('');
 	});
 });
