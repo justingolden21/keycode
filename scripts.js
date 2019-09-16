@@ -1,14 +1,12 @@
 $( ()=> {
 	document.body.onkeydown = (e)=> {
-		if (!e.metaKey)
+		if(!e.metaKey)
 			e.preventDefault();
-		document.getElementById('which').innerHTML = e.which;
-		document.getElementById('code').innerHTML = e.code;
+		$('#which').html(e.which);
+		$('#code').html(e.code);
 		$('#history').prepend('<option>' + e.which + ' | ' + e.code + '</option>');
 		$('#hint').removeClass('highlight');
 		$('#bodyDiv').removeClass('hidden');
 	}
-	$('#clear').click( ()=> {
-		$('#history').html('');
-	});
+	$('#clear').click( ()=> $('#history').html('') );
 });

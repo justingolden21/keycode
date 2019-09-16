@@ -9,14 +9,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="A simple keycode finder">
 	<meta name="keywords" content="keycode, key code, keycode finder, key code finder, keydown, keyup, keypress, javascript, keyboard">
-	<meta class="theme" name="theme-color" content="#000">
-	<meta class="theme" name="msapplication-navbutton-color" content="#000">
-	<meta class="theme" name="apple-mobile-web-app-status-bar-style" content="#000">
+	<meta class="theme" name="theme-color" content="#999">
+	<meta class="theme" name="msapplication-navbutton-color" content="#999">
+	<meta class="theme" name="apple-mobile-web-app-status-bar-style" content="#999">
 	<!-- <link rel="shortcut icon" href="img/logo.png"> -->
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 
 	<link rel="stylesheet" href="styles.css">
 	<script src="scripts.js"></script>
@@ -24,18 +23,18 @@
 </head>
 <body>
 
-	<h3><b><i class="fas fa-search"></i> Keycode Finder</b></h3>
-	<h5 id="hint" class="highlight"><i class="fas fa-keyboard"></i> Press a key...</h5>
+	<h1><b><i class="fas fa-search"></i> Keycode Finder</b></h1>
+	<h3 id="hint" class="highlight"><i class="fas fa-keyboard"></i> Press a key...</h3>
 	<br>
 	<div id="bodyDiv" class="hidden">
 		<div id="mainDiv">
 			<p><small><i class="fas fa-code"></i> e.which:</small> <span id="which"></span></p>
 			<p><small><i class="fas fa-keyboard"></i> e.code:</small> <span id="code"></span></p>
 		</div>
-		<!-- <br><hr><br> -->
 		<br><br>
-		<p><button id="clear" class="btn btn-danger">&times;</button> <b>History:</b></p>
-		<select multiple id="history" class="form-control"></select>
+		<label><button id="clear" class="">&times;</button> <b>History:</b></label>
+		<br><br>
+		<select multiple id="history" class=""></select>
 	</div>
 
 </body>

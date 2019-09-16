@@ -1,0 +1,13 @@
+======== TODO ========
+
+other:
+	add favicon
+
+======== MAYBE ========
+
+history:
+	don't display same history twice in a row
+	limit to most recent 100 items
+other:
+	run on keyup, not key down
+	allow certain types of key events such as tab, ctrl+R to refresh

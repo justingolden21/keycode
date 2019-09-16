@@ -5,7 +5,7 @@
 #hint.highlight {
 	font-size: 500%;
 }
-#bodyDiv.hidden {
+.hidden {
 	display: none;
 }
 ::-moz-selection {
@@ -19,18 +19,31 @@ body {
 }
 #mainDiv {
 	font-size: 200%;
-	border: 2px solid #666;
 	color: #666;
-	border-radius: 20px;
-	padding: 20px;
 }
-
-select {
+#mainDiv, select {
 	border: 2px solid #666 !important;
+	border-radius: 20px;	
+}
+select {
+	width: 100%;
 }
 select option {
 	padding: 10px;
+	color: #666;
+	font-size: 125%;
 }
-/*hr {
-	border: 1px solid #666;
-}*/
+#clear {
+	border: none;
+	color: #fff;
+	background-color: #c66;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 150%;
+}
+#clear:hover {
+	background-color: #933;
+}
