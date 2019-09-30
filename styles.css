@@ -1,6 +1,7 @@
 * {
 	text-align: center !important;
 	font-family: Helvetica;
+	outline: none;
 }
 #hint.highlight {
 	font-size: 500%;

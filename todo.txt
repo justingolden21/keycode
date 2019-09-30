@@ -1,8 +1,5 @@
 ======== TODO ========
 
-other:
-	add favicon
-
 ======== MAYBE ========
 
 history:
@@ -10,4 +7,4 @@ history:
 	limit to most recent 100 items
 other:
 	run on keyup, not key down
-	allow certain types of key events such as tab, ctrl+R to refresh
+	allow certain types of key events such as tab, ctrl+R to refresh? checkbox for override event?

@@ -1,5 +1,7 @@
 # Keycode
 
+<img src="img/logo.svg" width="72px">
+
 A simple keycode finder
 
 https://justingolden21.github.io/keycode/
@@ -8,4 +10,10 @@ https://justingolden21.github.io/keycode/
 
 Just press a key to see its number and name
 
-<img src="screenshot.jpg">
+<img src="img/screenshot.jpg">
+
+<hr>
+
+Contact: justingolden21@gmail.com
+
+Made with [Font Awesome](https://fontawesome.com/icons)
