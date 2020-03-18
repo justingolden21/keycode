@@ -9,4 +9,19 @@ $( ()=> {
 		$('#bodyDiv').removeClass('hidden');
 	}
 	$('#clear').click( ()=> $('#history').html('') );
+
+	$('#copyWhichBtn').click( ()=>
+		copyText($('#which').html() )
+	);
+	$('#copyCodeBtn').click( ()=>
+		copyText($('#code').html() )
+	);
 });
+
+function copyText(txt) {
+	let tmp = $('<input type="text">').appendTo(document.body);
+	tmp.val(txt);
+	tmp.select();
+	document.execCommand('copy');
+	tmp.remove();	
+}
