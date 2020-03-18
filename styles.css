@@ -52,8 +52,8 @@ select option {
 	background-color: #933;
 }
 label {
-	display: block;
-	margin: 20px;
+	margin: 30px;
+	display: inline-block;
 }
 button {
 	background-color: #eee;
