@@ -1,27 +1,22 @@
-$( ()=> {
-	document.body.onkeydown = (e)=> {
-		if(!e.metaKey)
-			e.preventDefault();
-		$('#which').html(e.which);
-		$('#code').html(e.code);
-		$('#history').prepend('<option>' + e.which + ' | ' + e.code + '</option>');
-		$('#hint').removeClass('highlight');
-		$('#bodyDiv').removeClass('hidden');
-	}
-	$('#clear').click( ()=> $('#history').html('') );
-
-	$('#copyWhichBtn').click( ()=>
-		copyText($('#which').html() )
-	);
-	$('#copyCodeBtn').click( ()=>
-		copyText($('#code').html() )
-	);
-});
+window.onload = ()=> {
+	document.body.onkeydown = e => {
+		if(!e.metaKey) e.preventDefault();
+		u('#which').html(e.which);
+		u('#code').html(e.code);
+		u('#history').prepend('<option>' + e.which + ' | ' + e.code + '</option>');
+		u('#hint').removeClass('highlight');
+		u('#bodyDiv').removeClass('hidden');
+	};
+	u('#clear').on('click', ( ()=> u('#history').html('') ) );
+	u('#copyWhichBtn').on('click', ( ()=> copyText(u('#which').html() ) ) );
+	u('#copyCodeBtn').on('click', ( ()=> copyText(u('#code').html() ) ) );
+};
 
 function copyText(txt) {
-	let tmp = $('<input type="text">').appendTo(document.body);
-	tmp.val(txt);
+	const tmp = document.createElement('textarea');
+	tmp.value = txt;
+	document.body.appendChild(tmp);
 	tmp.select();
 	document.execCommand('copy');
-	tmp.remove();	
+	document.body.removeChild(tmp);
 }

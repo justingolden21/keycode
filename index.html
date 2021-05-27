@@ -14,7 +14,7 @@
 	<meta class="theme" name="apple-mobile-web-app-status-bar-style" content="#999">
 	<link rel="shortcut icon" href="img/logo-64.png">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="umbrella.min.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 
 	<link rel="stylesheet" href="styles.css">
@@ -23,19 +23,19 @@
 </head>
 <body>
 
-	<h1><b><img src="img/logo-bold.svg" width="48px"> Keycode Finder</b></h1>
+	<h1><b><img src="img/logo.svg" width="48px"> Keycode Finder</b></h1>
 	<h3 id="hint" class="highlight"><i class="fas fa-keyboard"></i> Press a key...</h3>
 	<br>
 	<div id="bodyDiv" class="hidden">
 		<div id="mainDiv">
-			<p><small><i class="fas fa-code"></i> e.which:</small> <span id="which"></span>
+			<p><small><i class="fas fa-code"></i> &nbsp; e.which: &nbsp; </small> <span id="which"></span>
 				<button id="copyWhichBtn"><i class="fas fa-copy"></i></button>
 			</p>
-			<p><small><i class="fas fa-keyboard"></i> e.code:</small> <span id="code"></span>
+			<p><small><i class="fas fa-keyboard"></i> &nbsp; e.code: &nbsp; </small> <span id="code"></span>
 				<button id="copyCodeBtn"><i class="fas fa-copy"></i></button>
 			</p>
 		</div>
-		<button id="clear" class="">&times;</button> <label><b>History:</b></label>
+		<button id="clear" class=""><i class="fas fa-times"></i></button> <b id="history-label">History:</b>
 		<select multiple id="history" class=""></select>
 	</div>
 

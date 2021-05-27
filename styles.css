@@ -3,6 +3,9 @@
 	font-family: Helvetica;
 	outline: none;
 }
+#which, #code {
+	font-weight: bold;
+}
 #hint.highlight {
 	font-size: 500%;
 }
@@ -24,8 +27,7 @@ body {
 	color: #666;
 }
 #mainDiv, select {
-	border: 2px solid #666 !important;
-	border-radius: 10px;
+	border: 4px solid #999 !important;
 	box-shadow: 6px 6px 0px #ccc;
 }
 select {
@@ -40,28 +42,27 @@ select option {
 	border: none;
 	color: #fff;
 	background-color: #c66;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	border-radius: 5px;
-	font-weight: bold;
-	font-size: 150%;
 }
 #clear:hover {
 	background-color: #933;
 }
-label {
-	margin: 30px;
+#history-label {
+	margin: 20px;
+	margin-top: 40px;
 	display: inline-block;
 }
 button {
-	background-color: #eee;
+	background-color: #fff;
 	padding: 8px;
 	border: 2px solid #ccc;
 	color: #666;
 	cursor: pointer;
 }
+button:hover {
+	background-color: #666;
+	border-color: #666;
+	color: #fff;
+}
 button:active {
-	border: 2px solid #eee;
+	border: 2px solid #fff;
 }

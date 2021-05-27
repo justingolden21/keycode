@@ -10,7 +10,7 @@ https://justingolden21.github.io/keycode/
 
 Just press a key to see its number and name
 
-<img src="img/screenshot.jpg">
+<img src="img/screenshot.png">
 
 <hr>
 
