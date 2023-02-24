@@ -1,6 +1,6 @@
-window.onload = ()=> {
-	document.body.onkeyup = e => {
-		if(!e.metaKey) e.preventDefault();
+window.onload = () => {
+	document.body.onkeyup = (e) => {
+		if (!e.metaKey) e.preventDefault();
 		u('#which').html(e.which);
 		u('#code').html(e.code);
 		u('#key').html(e.key);
