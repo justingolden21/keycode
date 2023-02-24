@@ -6,5 +6,5 @@ history:
 	don't display same history twice in a row
 	limit to most recent 100 items
 other:
-	run on keyup, not key down
+	checkbox for run on keyup or keydown
 	allow certain types of key events such as tab, ctrl+R to refresh? checkbox for override event?

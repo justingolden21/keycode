@@ -1,5 +1,5 @@
 window.onload = ()=> {
-	document.body.onkeydown = e => {
+	document.body.onkeyup = e => {
 		if(!e.metaKey) e.preventDefault();
 		u('#which').html(e.which);
 		u('#code').html(e.code);
