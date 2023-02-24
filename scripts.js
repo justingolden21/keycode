@@ -9,11 +9,11 @@ window.onload = () => {
 		u('#hint').removeClass('highlight');
 		u('#bodyDiv').removeClass('hidden');
 	};
-	u('#clear').on('click', ( ()=> u('#history').html('') ) );
-	u('#copyWhichBtn').on('click', ( ()=> copyText(u('#which').html() ) ) );
-	u('#copyCodeBtn').on('click', ( ()=> copyText(u('#code').html() ) ) );
-	u('#copyKeyBtn').on('click', ( ()=> copyText(u('#key').html() ) ) );
-	u('#copyKeyCodeBtn').on('click', ( ()=> copyText(u('#keyCode').html() ) ) );
+	u('#clear').on('click', () => u('#history').html(''));
+	u('#copyWhichBtn').on('click', () => copyText(u('#which').html()));
+	u('#copyCodeBtn').on('click', () => copyText(u('#code').html()));
+	u('#copyKeyBtn').on('click', () => copyText(u('#key').html()));
+	u('#copyKeyCodeBtn').on('click', () => copyText(u('#keyCode').html()));
 };
 
 function copyText(txt) {
