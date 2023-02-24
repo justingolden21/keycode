@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 	<title>Keycode Finder</title>
 	<meta charset="utf-8">
 	<meta name="title=" content="Keycode Finder">
@@ -19,13 +18,12 @@
 
 	<link rel="stylesheet" href="styles.css">
 	<script src="scripts.js"></script>
-
 </head>
 <body>
-
-	<h1><b><img src="img/logo.svg" width="48px"> Keycode Finder</b></h1>
-	<h3 id="hint" class="highlight"><i class="fas fa-keyboard"></i> Press a key...</h3>
-	<br>
+	<div id="topDiv">
+		<h1><img src="img/logo.svg" width="48px"> Keycode Finder</h1>
+		<h3 id="hint" class="highlight"><i class="fas fa-keyboard"></i> Press a key...</h3>
+	</div>
 	<div id="bodyDiv" class="hidden">
 		<div id="mainDiv">
 			<p><small><i class="fas fa-code"></i> &nbsp; e.which: &nbsp; </small> <span id="which"></span>
@@ -41,9 +39,11 @@
 				<button id="copyKeyCodeBtn"><i class="fas fa-copy"></i></button>
 			</p>
 		</div>
-		<button id="clear" class=""><i class="fas fa-times"></i></button> <b id="history-label">History:</b>
-		<select multiple id="history" class=""></select>
+		<div id="historyDiv">
+			<button id="clear"><i class="fas fa-times"></i></button>
+			<b id="history-label">History:</b>
+			<select multiple id="history"></select>
+		</div>
 	</div>
-
 </body>
 </html>

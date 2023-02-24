@@ -1,9 +1,18 @@
-* {
-	text-align: center !important;
+body {
 	font-family: Helvetica;
+	color: #333;
+}
+* {
 	outline: none;
 }
-#which, #code {
+#topDiv {
+	text-align: center;
+}
+h1 {
+	display: inline-flex;
+	align-items: center;
+}
+#which, #code, #key, #keyCode {
 	font-weight: bold;
 }
 #hint.highlight {
@@ -19,22 +28,23 @@
 	background: hsl(0, 0%, 90%) !important;
 }
 body {
-	margin: 50px;
-	margin-top: 20px;
+	margin: 3rem;
+	margin-top: 1rem;
 }
 #mainDiv {
 	font-size: 200%;
 	color: #666;
 }
 #mainDiv, select {
-	border: 4px solid #999 !important;
-	box-shadow: 6px 6px 0px #ccc;
+	border: 0.25rem solid #ccc !important;
+	box-shadow: 0.5rem 0.5rem 0px #eee;
+	padding: 1rem;
 }
 select {
 	width: 100%;
 }
 select option {
-	padding: 10px;
+	padding: 0.5rem;
 	color: #666;
 	font-size: 125%;
 }
@@ -47,14 +57,13 @@ select option {
 	background-color: #933;
 }
 #history-label {
-	margin: 20px;
-	margin-top: 40px;
+	margin: 4rem 0 2rem 1rem;
 	display: inline-block;
 }
 button {
 	background-color: #fff;
-	padding: 8px;
-	border: 2px solid #ccc;
+	padding: 0.5rem;
+	border: none;
 	color: #666;
 	cursor: pointer;
 }
@@ -62,7 +71,4 @@ button:hover {
 	background-color: #666;
 	border-color: #666;
 	color: #fff;
-}
-button:active {
-	border: 2px solid #fff;
 }
