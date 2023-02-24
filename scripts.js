@@ -3,6 +3,8 @@ window.onload = ()=> {
 		if(!e.metaKey) e.preventDefault();
 		u('#which').html(e.which);
 		u('#code').html(e.code);
+		u('#key').html(e.key);
+		u('#keyCode').html(e.keyCode);
 		u('#history').prepend('<option>' + e.which + ' | ' + e.code + '</option>');
 		u('#hint').removeClass('highlight');
 		u('#bodyDiv').removeClass('hidden');
@@ -10,6 +12,8 @@ window.onload = ()=> {
 	u('#clear').on('click', ( ()=> u('#history').html('') ) );
 	u('#copyWhichBtn').on('click', ( ()=> copyText(u('#which').html() ) ) );
 	u('#copyCodeBtn').on('click', ( ()=> copyText(u('#code').html() ) ) );
+	u('#copyKeyBtn').on('click', ( ()=> copyText(u('#key').html() ) ) );
+	u('#copyKeyCodeBtn').on('click', ( ()=> copyText(u('#keyCode').html() ) ) );
 };
 
 function copyText(txt) {
