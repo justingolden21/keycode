@@ -14,6 +14,7 @@ h1 {
 }
 #which, #code, #key, #keyCode {
 	font-weight: bold;
+	font-size: 150%;
 }
 #hint.highlight {
 	font-size: 500%;
@@ -32,7 +33,7 @@ body {
 	margin-top: 1rem;
 }
 #mainDiv {
-	font-size: 200%;
+	font-size: 150%;
 	color: #666;
 }
 #mainDiv, select {
