@@ -5,7 +5,7 @@ window.onload = ()=> {
 		u('#code').html(e.code);
 		u('#key').html(e.key);
 		u('#keyCode').html(e.keyCode);
-		u('#history').prepend('<option>' + e.which + ' | ' + e.code + '</option>');
+		u('#history').prepend('<option>' + e.which + ' &mdash; ' + e.code + ' &mdash; ' + e.key + ' &mdash; ' + e.keyCode + '</option>');
 		u('#hint').removeClass('highlight');
 		u('#bodyDiv').removeClass('hidden');
 	};
