@@ -8,3 +8,4 @@ history:
 other:
 	checkbox for run on keyup or keydown
 	allow certain types of key events such as tab, ctrl+R to refresh? checkbox for override event?
+	move to rgb studios?
